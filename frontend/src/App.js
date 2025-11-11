@@ -23,6 +23,8 @@ const App = () => {
     }
   }, [dispatch]);
 
+  console.log("⚡ Frontend test update"); // <-- add this line
+
   return (
     <>
       <ToastContainer />

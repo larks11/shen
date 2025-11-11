@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 console.log("MONGO_URI =", process.env.MONGO_URI);
+console.log("⚡ Backend test update"); // <-- add this line
 
 import path from 'path';
 import express from 'express';
