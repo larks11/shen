@@ -94,7 +94,12 @@ const ProductScreen = () => {
                     text={`${product.numReviews} reviews`}
                   />
                 </ListGroup.Item>
-                <ListGroup.Item>Price: ${product.price}</ListGroup.Item>
+
+                {/* FIXED PESO SIGN HERE */}
+                <ListGroup.Item>
+                  Price: ₱{product.price.toLocaleString()}
+                </ListGroup.Item>
+
                 <ListGroup.Item>
                   Description: {product.description}
                 </ListGroup.Item>
@@ -106,11 +111,14 @@ const ProductScreen = () => {
                   <ListGroup.Item>
                     <Row>
                       <Col>Price:</Col>
+
+                      {/* FIXED PESO SIGN HERE */}
                       <Col>
-                        <strong>${product.price}</strong>
+                        <strong>₱{product.price.toLocaleString()}</strong>
                       </Col>
                     </Row>
                   </ListGroup.Item>
+
                   <ListGroup.Item>
                     <Row>
                       <Col>Status:</Col>
